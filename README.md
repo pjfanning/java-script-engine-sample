@@ -1,5 +1,5 @@
 # java-script-engine-sample
-Demo using Java SecurityManager
+Demo using Java SecurityManager to stop an OS command being run.
 
 ```
 Copyright 2021 PJ Fanning
