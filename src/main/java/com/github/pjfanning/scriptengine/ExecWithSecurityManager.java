@@ -20,9 +20,12 @@ import java.util.Objects;
 
 import static com.github.pjfanning.scriptengine.Utilities.createScriptEngine;
 
-public class ExecWithoutSecurityManager {
+public class ExecWithSecurityManager {
     public static void main(String[] args) {
         try {
+            //you should look at configuring the SecurityManager but this default one prevents the file system
+            //access that allows this script to work in `ExecWithoutSecurityManager`
+            System.setSecurityManager(new SecurityManager());
             final ScriptEngine scriptEngine = createScriptEngine("javascript");
             System.out.println(Objects.toString(scriptEngine.eval(Utilities.SCRIPT), null));
             System.out.println("script has been run");
