@@ -19,7 +19,7 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 
 public class Utilities {
-    public static String COMMAND = "open /Users/pj.fanning/Downloads/Trim_Customer_code.docx";
+    public static String COMMAND = "open https://www.google.com";
     public static String SCRIPT = "java.lang.Runtime.getRuntime().exec('" + COMMAND + "')";
 
     public static ScriptEngine createScriptEngine(String engineName) {
