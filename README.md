@@ -1,6 +1,8 @@
 # java-script-engine-sample
 Demo using Java SecurityManager to stop an OS command being run.
 
+Documented in this [blog article](https://medium.com/@pjfanning/use-java-security-manager-to-protect-your-apps-3914768201be).
+
 ```
 Copyright 2021 PJ Fanning
 
